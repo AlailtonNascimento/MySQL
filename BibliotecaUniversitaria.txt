@@ -1,0 +1,28 @@
+CREATE TABLE Aluno (
+    ra INT,
+    nome VARCHAR(70),
+    email VARCHAR(65),
+    telefone INT,
+    Emprestimo_idEmprestimo INT
+);
+
+CREATE TABLE Colaborador (
+    cpf INT,
+    nome VARCHAR(70),
+    email VARCHAR(60),
+    cargo VARCHAR(70)
+);
+
+CREATE TABLE Livros (
+    isbin INT,
+    nome VARCHAR(100),
+    autor VARCHAR(70),
+    paginas INT
+);
+CREATE TABLE Emprestimo (
+    idEmprestimo INT,
+    dataEmprestimo DATETIME,
+    dataDevolucao DATETIME,
+    livroIsbn INT,
+    colaboradorCpf INT
+);
